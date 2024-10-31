@@ -2,8 +2,7 @@
 
 ## ATA-Intune-Device-Checker_v1.1
 # Medium Blog 
-[https://medium.com/@m365alikoc/ata-intune-device-checker-tool-c9ee8ea6b0f9](https://medium.com/@m365alikoc/ata-intune-device-checker-tool-c9ee8ea6b0f9)
-
+https://medium.com/@m365alikoc/ata-intune-device-checker-tool-release-update-version-1-1-a0fba2bfc25f
 # Prerequisite
 
 Düzenlemek için Python uygulamasına ihtiyaç duymaktasınız.
