@@ -3,6 +3,7 @@
 ## Release Update
 # What is News ?
 With this tool, you can access details such as 𝐂𝐨𝐦𝐩𝐥𝐢𝐚𝐧𝐜𝐞 𝐒𝐭𝐚𝐭𝐮𝐬, 𝐋𝐚𝐬𝐭 𝐒𝐲𝐧𝐜 𝐃𝐚𝐭𝐞, 𝐒𝐞𝐫𝐢𝐚𝐥 𝐍𝐮𝐦𝐛𝐞𝐫, and more. You can also take actions on these devices, which was not possible in the first version. With this update, you can now take action on devices.
+
 📢 What are these actions?
 - ✔️Sync
 - ✔️Delete
