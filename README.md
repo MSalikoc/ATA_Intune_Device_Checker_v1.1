@@ -8,7 +8,8 @@ With this tool, you can access details such as 𝐂𝐨𝐦𝐩𝐥𝐢𝐚𝐧�
 - ✔️Delete
 - ✔️Retire
 - ✔️Wipe
-* You can apply these actions to a single device or multiple devices at once.
+
+You can apply these actions to a single device or multiple devices at once.
 - 🔥 The updated interface is now simpler and more user-friendly.
 
 
