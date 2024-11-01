@@ -18,40 +18,39 @@ You can apply these actions to a single device or multiple devices at once.
 https://medium.com/@m365alikoc/ata-intune-device-checker-tool-release-update-version-1-1-a0fba2bfc25f
 # Prerequisite
 
-Düzenlemek için Python uygulamasına ihtiyaç duymaktasınız.
-Kod Python ile yazılmıştır, bu yüzden sisteminizde Python 3.x sürümü kurulu olmalıdır.
-Python'un kurulu olup olmadığını şu komut ile terminal veya komut satırında kontrol edebilirsiniz:
-'python --version'
+To make adjustments, you need a Python application. The code is written in Python, so you must have Python 3.x installed on your system. You can check if Python is installed by running the following command in your terminal or command prompt: python --version.
 
 # Microsoft Azure App Registration
-Azure Active Directory'de bir App Registration yapmanız gerekmektedir.
-Client ID ve Tenant ID bilgileri bu kodda zaten tanımlanmış durumda. Ancak bu bilgilerin gerçek ve doğru olduğundan emin olmanız gerekir. Eğer kendi uygulamanızı kullanacaksanız, aşağıdaki adımları izleyerek bir App Registration oluşturun:
-Azure Portal'a gidin ve Azure Active Directory bölümüne girin.
-App Registrations altından yeni bir uygulama kaydedin.
-Kaydettikten sonra, Application (client) ID ve Directory (tenant) ID bilgilerinizi alabilirsiniz.
-# Kodda scopes olarak kullanılan izinleri 
+You will need to create an App Registration in Azure Active Directory. The Client ID and Tenant ID are already defined in the code, but you should ensure these values are accurate. 
+
+If you’re using your own application, follow the steps below to create an App Registration: Go to the Azure Portal, navigate to the Azure Active Directory section, and select App Registrations to register a new application. 
+
+After registering, you can obtain your Application (client) ID and Directory (tenant) ID.
+
+# Permissions used as scopes in the scripti 
 - Device.Read.All
 - DeviceManagementManagedDevices.Read.All
 - DeviceManagementManagedDevices.PrivilegedOperations.All
 - DeviceManagementManagedDevices.ReadWrite.All
 uygulamanızın izinlerine eklemeniz gerekir.
-# Microsoft Graph API Erişim Yetkileri
-Azure portalında uygulamanızın API permissions bölümüne gidin ve aşağıdaki izinleri eklediğinizden emin olun:
+# Microsoft Graph API Access Authorizations
+In the Azure portal, go to the API permissions section of your application and make sure to add the following permissions:
 - Device.Read.All
 - DeviceManagementManagedDevices.Read.All
 - DeviceManagementManagedDevices.PrivilegedOperations.All
 - DeviceManagementManagedDevices.ReadWrite.All
-Gerekli izinleri ekledikten sonra admin consent verildiğinden emin olun.
 
-# Kullanıcı Hesabı
-Bu uygulama, cihaz bilgilerine erişmek için kullanıcı kimliğiyle Microsoft Graph API'ye kimlik doğrulaması yapacak. Bu nedenle, uygulamanın çalıştığı ortamda Microsoft 365'e bağlı bir kullanıcı hesabı olmalıdır.
-Uygulama çalışırken kullanıcıdan kimlik doğrulaması yapması istenir. Uygulama, cihaz bilgilerini çekmek için kullanıcıya bir doğrulama kodu sağlar.
+After adding the necessary permissions, make sure admin consent is granted.
+
+# User Account
+This app will authenticate to the Microsoft Graph API with the user ID to access device information. Therefore, there must be a user account connected to Microsoft 365 in the environment where the app is running.
+
+When the app is running, the user will be prompted to authenticate. The app provides the user with a verification code to pull device information.
 
 ## Setup
-
-- Uygulamayı çalıştırın (Ataversion1.1.exe)
-- Daha sonra Tenant ID ve Client ID bilgilerinizi girerek Authorization işlemlerini başlatın
-- Authorization sonrası sorgulamak istediğiniz cihaz ismi veya kullanıcı ismini girerek detaylara erişebilirsiniz.
+- Run the application (Ataversion1.1.exe)
+- Then enter your Tenant ID and Client ID information and start Authorization process
+- After authorization, you can access the details by entering the device name or user name you want to query.
 
 ## UI 
 
